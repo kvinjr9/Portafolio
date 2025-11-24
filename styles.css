@@ -3,14 +3,13 @@
 }
 .container_Header {
   width: 100%;
-  height: auto;  
+  height: auto;
   font-size: 20px;
   background-color: rgb(24 28 20);
   padding: 20px;
   text-align: center;
   box-shadow: 0 2px 4px rgb(105 107 101);
   box-sizing: border-box;
-
 }
 
 .container_Header ul {
@@ -31,26 +30,80 @@
 }
 
 .container_I {
-    display: flex;
-    position: relative;
-    align-items: center;
-    background-color: rgb( 60 61 55);
-}
-.container_I .foto  {
-    width: 200px;
-    margin: 50px;
-    right: 0;
-    top: 0;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgb(105 107 101);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(97, 98, 96);
+  gap: 200px;
 }
 
-.container_I h1, .container_I p {
-    color: rgb(236 223 204);
+.container_items {
+  color: rgb(24 28 20);
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 0px 80px 0px;
 }
-.container_svg {
-    margin : 20px;
+.container_items strong {
+  text-shadow: 0px 0px 8px rgb(236 223 204);
+  color: rgb(236 223 204);
 }
-.container_svg img {
-    margin: 10px;
+
+.container_items .foto {
+  margin: 10px;
+  order: 3;
+}
+.container_items p {
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  order: 2;
+}
+
+.container_items .svg {
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px 10px 0px 10px;
+  order: 1;
+}
+
+.foto {
+  width: 450px;
+  margin: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0px 8px rgb(236 223 204);
+}
+.container_inf {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 180px;
+  gap: 100px;
+  background-color: rgb(236 223 204);
+}
+
+.container_inf h3 {
+  text-align: center;
+  justify-content: center;
+  display: block;
+  font-size: 50px;
+  width: auto;
+  white-space: nowrap;
+}
+.container_inf p {
+  text-align: center;
+  font-size: 21px;
+}
+.container_Tec {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.container_Tecinfo {
 }
