@@ -34,26 +34,85 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  background-color: rgb(97, 98, 96);
+  background-color: rgb(0, 0, 0);
   gap: 200px;
 }
-.keyname{
+.keyname {
   color: rgb(128 237 235);
   align-items: center;
   margin: 20px;
+  animation: code_name 2s infinite;
+}
+@keyframes code_name {
+  0% {
+    color: rgb(128 237 235);
+    text-shadow: 0px 0px 8px rgb(128 237 235);
+  }
+  25% {
+    color: rgb(128 237 235);
+    display: none;
+  }
+  50% {
+    color: rgb(128 237 235);
+    display: none;
+  }
+  75% {
+    color: rgb(128 237 235);
+    display: none;
+  }
+  100% {
+    color: rgb(128 237 235);
+    text-shadow: 0px 0px 8px rgb(128 237 235);
+  }
 }
 
 .container_items {
-  color: rgb(24 28 20);
+  color: rgb(255, 255, 255);
   display: block;
   justify-content: center;
   text-align: center;
   padding: 80px 0px 80px 0px;
 }
+.container_items {
+  text-align: center !important;
+}
 
 .container_items strong {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0ch;
+  max-width: var(--w, 9ch); 
+  box-sizing: border-box;
+  border-right: 0.12em solid rgb(236 223 204); 
+  color: rgb(128 237 235);
   text-shadow: 0px 0px 8px rgb(236 223 204);
-  color: rgb(128 237 235) ;
+
+  --steps: 20;
+  animation: typingLoop 4s steps(var(--steps)) infinite, blinkCaret 0.7s step-end infinite;
+}
+
+
+@keyframes typingLoop {
+  0% {
+    width: 0ch;
+  }
+  45% {
+    width: var(--w, 20ch);
+  } 
+  65% {
+    width: var(--w, 20ch);
+  } 
+  100% {
+    width: 0ch;
+  } 
+}
+
+@keyframes blinkCaret {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .container_items .foto {
@@ -70,6 +129,9 @@
 }
 
 .container_items .svg {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
   justify-content: center;
   text-align: center;
   gap: 10px;
@@ -78,7 +140,7 @@
 }
 
 .foto {
-  width: 450px;
+  width: 380px;
   margin: 30px;
   border-radius: 50%;
   box-shadow: 0 0px 8px rgb(236 223 204);
