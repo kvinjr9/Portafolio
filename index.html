@@ -1,44 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kvinjr9</title>
+    <title>Kevin Rey | Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="container_Header">
       <nav>
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre mi</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mi</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
-
-    <section class="container_I">
-
+    <section class="container_I" id="inicio">
       <div class="container_items">
-        <img class="foto"
-        src="img/Imagen%20de%20WhatsApp%202025-11-21%20a%20las%2022.01.01_253795fc.jpg"
-        alt="mi cara"
+        <img
+          class="foto"
+          src="img/Imagen%20de%20WhatsApp%202025-11-21%20a%20las%2022.01.01_253795fc.jpg"
+          alt="mi cara"
         />
       </div>
 
       <div class="container_items">
-        <h1><span class="keyname">[</span>Hi, I'm: <strong class="name">Kevin Rey</strong><span class="keyname">]</span></h1>
+        <h1>
+          <span class="keyname">[</span>Hola, soy:
+          <strong class="name">Kevin Rey</strong><span class="keyname">]</span>
+        </h1>
         <p>Programador Full stack y ingeniero en sistemas</p>
-      
-        <a href="https://www.linkedin.com/in/kevin-rey-a09307248/"><img class="svg" src="svg/linkedin-1-svgrepo-com.svg" width="50px" alt="LinkedIn" /></a>
-        <a href="https://github.com/kvinjr9"><img class="svg" src="svg/github-142-svgrepo-com.svg" width="50px" alt="GitHub" /></a>
-      </div>
 
+        <a
+          href="https://www.linkedin.com/in/kevin-rey-a09307248/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            class="svg"
+            src="svg/linkedin-1-svgrepo-com.svg"
+            width="50px"
+            alt="LinkedIn"
+        /></a>
+        <a
+          href="https://github.com/kvinjr9"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            class="svg"
+            src="svg/github-142-svgrepo-com.svg"
+            width="50px"
+            alt="GitHub"
+        /></a>
+      </div>
     </section>
 
-    <section class="container_inf">
+    <section class="container_inf" id="sobre-mi">
       <h3>¡Quien soy!</h3>
       <p>
         Soy desarrollador web en formacion y estudiante de ingenieria de
@@ -50,28 +71,154 @@
         inteligencia artifical y quiero llevar mis conosimientos a proyectos
         reales para asi aportar a la comunidad tecnologica
       </p>
-    </section> 
+    </section>
 
     <section class="Container_Tec">
       <div class="container_Texttec">
-        <h3>Tecnologias</h2>
+        <h3>Tecnologias</h3>
         <p><span>Frontend & Backend</span></p>
       </div>
       <div class="container_Tecinfo">
         <img src="svg/css-3-svgrepo-com.svg" width="50px" alt="CSS" />
         <img src="svg/html-svgrepo-com.svg" width="50px" alt="HTML" />
         <img src="svg/js-svgrepo-com.svg" width="50px" alt="JavaScript" />
-        <img src="svg/typescript-official-svgrepo-com.svg" width="50px" alt="TypeScript" />
+        <img
+          src="svg/typescript-official-svgrepo-com.svg"
+          width="50px"
+          alt="TypeScript"
+        />
         <img src="svg/react-svgrepo-com.svg" width="50px" alt="React" />
       </div>
     </section>
 
-    
-    <footer>
-        <a href="https://wa.me/573112492515" target="_blank">WhatsApp</a>
-        <a href="mailto:kvinjr9@gmail.com">Correo</a>
-        <a href="https://www.linkedin.com/in/kevin-rey-a09307248/">LinkedIn</a>
-        <p>© 2025 Kevin Rey. Hecho con café y código. Derechos reservados.</p>
-    </footer> 
+    <section class="container_projects" id="proyectos">
+      <div class="projects_heading">
+        <h3>Proyectos Destacados</h3>
+        <p>Soluciones reales orientadas a productividad y automatizacion.</p>
+      </div>
+
+      <div class="projects_grid">
+        <article class="project_card">
+          <div class="project_media">
+            <img src="img/favicon.png" alt="Logo de GEMA" />
+          </div>
+
+          <div class="project_content">
+            <p class="project_tag">Sistema Web</p>
+            <h4>GEMA</h4>
+            <p>
+              GEMA es un sistema web que simplifica la gestion de mantenimiento
+              preventivo y control de maquinaria. Monitorea tus equipos,
+              programa mantenimientos y lleva tu operacion al siguiente nivel.
+            </p>
+
+            <div class="project_features">
+              <div>
+                <h5>Mantenimientos eficientes</h5>
+                <p>
+                  Programa y registra mantenimientos preventivos sin perder el
+                  control del estado de tus equipos.
+                </p>
+              </div>
+
+              <div>
+                <h5>Control de uso</h5>
+                <p>
+                  Registra las horas maquina y genera reportes precisos para la
+                  toma de decisiones.
+                </p>
+              </div>
+
+              <div>
+                <h5>Alertas automaticas</h5>
+                <p>
+                  Recibe notificaciones cuando una maquina este proxima a
+                  mantenimiento.
+                </p>
+              </div>
+            </div>
+
+            <div class="project_actions">
+              <a
+                href="https://gema-co.site/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ir al sitio de GEMA"
+                >Ir al sitio</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project_card project_card--natbot">
+          <div class="project_media project_media--natbot">
+            <div class="bot_badge">
+              <h5>Natbot</h5>
+              <p>Automatizacion Inteligente en WhatsApp</p>
+            </div>
+          </div>
+
+          <div class="project_content">
+            <p class="project_tag">Automatizacion | WhatsApp Business</p>
+            <h4>Natbot</h4>
+            <p>
+              Asistente digital 24/7 que automatiza la atencion al cliente y
+              optimiza procesos internos mediante WhatsApp. Funciona como una
+              secretaria virtual que responde consultas, comparte informacion y
+              ejecuta tareas operativas sin intervencion manual.
+            </p>
+            <p class="project_status">Implementado y en funcionamiento</p>
+
+            <div class="project_features">
+              <div>
+                <h5>Atencion continua</h5>
+                <p>
+                  Responde consultas de clientes en cualquier momento, sin
+                  horarios limitados.
+                </p>
+              </div>
+
+              <div>
+                <h5>Procesos internos optimizados</h5>
+                <p>
+                  Automatiza tareas repetitivas para que el equipo se enfoque en
+                  actividades de mayor valor.
+                </p>
+              </div>
+
+              <div>
+                <h5>Escalabilidad sin sobrecostos</h5>
+                <p>
+                  Mejora la experiencia del cliente con respuestas inmediatas
+                  sin aumentar costos operacionales.
+                </p>
+              </div>
+            </div>
+
+            <div class="project_actions">
+              <a
+                href="https://www.instagram.com/crehana_3269/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver cuenta de Instagram del cliente de Natbot"
+                >Ver cliente</a
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer id="contacto">
+      <a href="https://wa.me/573124549427" target="_blank">WhatsApp</a>
+      <a href="mailto:kvinjr9@gmail.com">Correo</a>
+      <a
+        href="https://www.linkedin.com/in/kevin-rey-a09307248/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >
+      <p>© 2025 Kevin Rey. Hecho con café y código. Derechos reservados.</p>
+    </footer>
   </body>
 </html>
